@@ -2,7 +2,7 @@
 
 ## Description
 
-Welcome to **aws_s3_flutterflow**! This repo is your go-to solution for integrating AWS S3 multipart uploads into a FlutterFlow app. It handles large file uploads efficiently with all the necessary API endpoints and Flutter code.
+Welcome to **aws_s3_flutterflow**! This repo is your go-to solution for integrating AWS S3 multipart uploads into a FlutterFlow app. It handles large file uploads (more than 5GB) efficiently with all the necessary API endpoints and Flutter code.
 
 ## Features
 
@@ -25,6 +25,8 @@ If you’ve ever felt like tearing your hair out over missing documentation and 
 - Generate Pre-signed URLs: /generate-presigned-urls
 - Upload Chunk: Use pre-signed URLs
 - Complete Multipart Upload: /complete-upload
+
+The API code is present in index.js. You can deploy this on firebase as I did or any other deployment service as well. I have included the json depedencies required for the api to run as well. After deployment of the API, you will have to copy its url to the flutter/flutterflow project code where it says "Your_URL". This would make your uploads smooth and hassle free.
 
 Feel free to customize it further based on your preferences!
 
